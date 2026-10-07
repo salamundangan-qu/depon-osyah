@@ -9,10 +9,9 @@
     <title>Undangan Ngunduh Mantu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet" />
-    <link rel="preload" as="image" href="assets/images/cover-betawi.webp" type="image/webp" fetchpriority="high" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23143b31'/%3E%3Cpath d='M10 17h44L48 29H16z' fill='%23d5ab5d'/%3E%3Cpath d='M19 35c8-10 18-10 26 0-8 12-18 12-26 0Z' fill='%23f6f0df'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="is-locked">
     <div class="cover" id="cover" aria-labelledby="cover-title">
@@ -52,7 +51,7 @@
           <div class="couple-grid">
             <article class="person-card reveal">
               <div class="photo-placeholder">
-                <img src="assets/images/person-depon.webp" alt="Depon, mempelai pria" width="959" height="1200" loading="lazy" decoding="async">
+                <img src="person-depon.webp" alt="Depon, mempelai pria" loading="lazy" decoding="async">
               </div>
               <h3 data-field="groomFull">Raka Pratama</h3>
               <p>Putra dari <span data-field="groomParents">Bapak Ahmad &amp; Ibu Siti</span></p>
@@ -60,7 +59,7 @@
             <div class="couple-mark reveal" aria-hidden="true">&amp;</div>
             <article class="person-card reveal">
               <div class="photo-placeholder">
-                <img src="assets/images/person-osyah.webp" alt="Osyah, mempelai wanita" width="959" height="1200" loading="lazy" decoding="async">
+                <img src="person-osyah.webp" alt="Osyah, mempelai wanita" loading="lazy" decoding="async">
               </div>
               <h3 data-field="brideFull">Nadira Putri</h3>
               <p>Putri dari <span data-field="brideParents">Bapak Hendra &amp; Ibu Rina</span></p>
@@ -107,13 +106,13 @@
           </header>
           <div class="gallery-grid">
             <figure class="gallery-item gallery-item--large reveal">
-              <img src="assets/images/gallery-01.webp" alt="Depon dan Osyah bersama keluarga" width="960" height="1280" loading="lazy" decoding="async">
+              <img src="gallery-01.webp" alt="Depon dan Osyah bersama keluarga" loading="lazy" decoding="async">
             </figure>
             <figure class="gallery-item reveal">
-              <img src="assets/images/gallery-02.webp" alt="Depon dan Osyah bersama keluarga di pelaminan" width="1280" height="962" loading="lazy" decoding="async">
+              <img src="gallery-02.webp" alt="Depon dan Osyah bersama keluarga di pelaminan" loading="lazy" decoding="async">
             </figure>
             <figure class="gallery-item reveal">
-              <img src="assets/images/gallery-03.webp" alt="Depon dan Osyah bersama keluarga dengan busana Betawi" width="1280" height="962" loading="lazy" decoding="async">
+              <img src="gallery-03.webp" alt="Depon dan Osyah bersama keluarga dengan busana Betawi" loading="lazy" decoding="async">
             </figure>
           </div>
         </div>
@@ -138,15 +137,15 @@
       <a href="#galeri">Galeri</a>
     </nav>
 
-    <audio id="backgroundMusic" loop preload="none">
-      <source src="assets/audio/musik-betawi.mp3" type="audio/mpeg">
+    <audio id="backgroundMusic" loop preload="metadata">
+      <source src="musik-betawi.mp3" type="audio/mpeg">
     </audio>
     <button class="music-toggle" id="musicToggle" type="button" aria-label="Nyalakan musik" aria-pressed="false" title="Nyalakan musik" hidden>
       <span class="music-toggle__icon" aria-hidden="true">♪</span>
       <span class="music-toggle__state" aria-hidden="true">OFF</span>
     </button>
 
-    <script src="assets/js/data.js" defer></script>
-    <script src="assets/js/script.js" defer></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

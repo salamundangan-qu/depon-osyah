@@ -1,49 +1,22 @@
-# Undangan Ngunduh Mantu — Depon & Osyah
+# Undangan Ngunduh Mantu
 
-Undangan digital satu halaman bertema Betawi modern, dibuat ringan dan responsif untuk desktop maupun perangkat seluler.
+Undangan Ngunduh Mantu satu halaman bertema Betawi modern untuk Depon & Osyah.
 
-## Struktur file
+Seluruh bagian menggunakan palet hijau, marun, krem, dan emas dengan ornamen gigi balang, kembang kelapa, serta siluet Rumah Kebaya yang konsisten dari cover hingga penutup.
 
-```text
-.
-├── index.html
-├── assets
-│   ├── audio
-│   │   └── musik-betawi.mp3
-│   ├── css
-│   │   └── style.css
-│   ├── images
-│   │   ├── cover-betawi.webp
-│   │   ├── gallery-01.webp
-│   │   ├── gallery-02.webp
-│   │   ├── gallery-03.webp
-│   │   ├── person-depon.webp
-│   │   └── person-osyah.webp
-│   └── js
-│       ├── data.js
-│       └── script.js
-└── README.md
-```
+## Mengganti data
 
-## Mengubah isi undangan
+- Nama, orang tua, tanggal, lokasi, dan tautan Google Maps: cukup ubah di `data.js`.
+- Galeri menggunakan `gallery-01.webp`, `gallery-02.webp`, dan `gallery-03.webp`.
+- Foto mempelai menggunakan `person-depon.webp` di kiri dan `person-osyah.webp` di kanan.
+- Musik latar menggunakan `musik-betawi.mp3`; musik mulai setelah tombol **Buka Undangan** ditekan dan dapat dinyalakan/dimatikan melalui tombol musik.
+- Saat cover dibuka, halaman akan meminta mode fullscreen apabila didukung oleh browser.
 
-- Data nama, orang tua, tanggal, waktu, lokasi, dan Google Maps berada di `assets/js/data.js`.
-- Foto mempelai dan galeri berada di `assets/images/`.
-- Musik latar berada di `assets/audio/musik-betawi.mp3`.
-- Tampilan utama berada di `assets/css/style.css`.
+## Publikasi GitHub Pages
 
-## Optimasi
+1. Unggah semua berkas ke repository GitHub.
+2. Buka **Settings > Pages**.
+3. Pada **Build and deployment**, pilih **Deploy from a branch**.
+4. Pilih branch `main` dan folder `/ (root)`, lalu simpan.
 
-- Seluruh gambar memakai format WebP dan dimuat secara lazy, kecuali gambar cover.
-- Gambar memiliki ukuran intrinsik untuk mengurangi pergeseran tata letak.
-- Musik tidak diunduh sebelum pengunjung menekan tombol **Buka Undangan**.
-- Bagian di luar layar ditunda proses render-nya menggunakan `content-visibility`.
-- JavaScript dimuat dengan `defer` dan animasi memiliki fallback untuk browser lama.
-
-## GitHub Pages
-
-Buka **Settings → Pages**, pilih **Deploy from a branch**, lalu gunakan branch `main` dan folder `/ (root)`.
-
-Alamat publik:
-
-`https://salamundangan-qu.github.io/depon-osyah/`
+Gunakan foto WebP terkompresi agar halaman tetap ringan.
